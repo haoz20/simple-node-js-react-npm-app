@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'echo "webhook-test" && npm install'
             }
         }
         stage('Test') { 
